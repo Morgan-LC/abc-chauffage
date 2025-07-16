@@ -1,0 +1,209 @@
+    :root {
+      --main-color: #295997;
+      --accent-color: #908f8c97;
+      --background-color: #f9f9f9;
+      --text-color: #333;
+      --font-family: 'Poppins', sans-serif;
+      --radius: 12px;
+      --transition: all 0.3s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--main-color);
+      padding: 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 999;
+    }
+
+    nav a {
+      color: var(--main-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    nav .logo {
+
+    }
+
+    .hero {
+      background: linear-gradient(to right, var(--main-color), var(--accent-color));
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+      display: flex;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero section {
+      width: 50%;
+      margin: auto;
+    }
+
+
+    .hero section img {
+      width: 100%;
+    }
+
+    .hero .cta-btn {
+      background-color: white;
+      color: var(--main-color);
+      padding: 1rem 2rem;
+      border-radius: var(--radius);
+      font-weight: bold;
+      margin-top: 2rem;
+      display: inline-block;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .hero .cta-btn:hover {
+      background-color: var(--accent-color);
+      color: white;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .service {
+      background-color: white;
+      border-radius: var(--radius);
+      padding: 2rem 1.5rem;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service i {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--main-color);
+    }
+
+    .service h3 {
+      color: var(--main-color);
+      margin-bottom: 0.5rem;
+    }
+
+    #about {
+      padding: 4rem 2rem;
+      background-color: white;
+      text-align: center;
+    }
+
+    #about h2 {
+      color: var(--main-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .testimonials {
+      background-color: var(--accent-color);
+      padding: 4rem 2rem;
+      color: #fff;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      margin-bottom: 2rem;
+    }
+
+    .testimonial {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    #contact {
+      background-color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    #contact h2 {
+      color: var(--main-color);
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input,
+    textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      font-family: var(--font-family);
+    }
+
+    button {
+      background-color: var(--main-color);
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: var(--radius);
+      font-weight: bold;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    button:hover {
+      background-color: var(--accent-color);
+    }
+
+    footer {
+      background-color: var(--main-color);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer .footer-links {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
