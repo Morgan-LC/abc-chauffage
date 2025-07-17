@@ -44,7 +44,7 @@
 
     nav .logo img {
       height: 4.5rem;
-      width: 100%;
+      width: auto;
     }
 
     nav a {
