@@ -90,6 +90,12 @@
       margin-bottom: 1rem;
     }
 
+    @media only screen and (max-width:600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+
     .hero section img {
       width: 100%;
     }
@@ -171,6 +177,12 @@
       width: 30%;
       margin: auto;
       border-radius: var(--radius);
+    }
+
+    @media only screen and (max-width:600px) {
+      #about .abc-images img {
+        width: 100%;
+      }
     }
 
     .testimonials {
